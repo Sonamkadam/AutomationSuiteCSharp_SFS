@@ -6,13 +6,21 @@
     <IsPackable>false</IsPackable>
 
     <Configurations>Debug;Release;Refrences</Configurations>
+
+    <ApplicationIcon />
+
+    <OutputType>Library</OutputType>
+
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
     <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="3.12.0" />
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="EPPlus" Version="5.6.4" />
     <PackageReference Include="ExtentReports" Version="4.1.0" />
+    <PackageReference Include="ExtentReports.Core" Version="1.0.3" />
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
@@ -26,6 +34,213 @@
     <Folder Include="Reports\" />
     <Folder Include="TestData\" />
     <Folder Include="Screenshots\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="datacollector">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\datacollector.dll</HintPath>
+    </Reference>
+    <Reference Include="dotnet">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\dotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DeveloperCertificates.XPlat">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.AspNetCore.DeveloperCertificates.XPlat.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.Build.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.Build.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.NuGetSdkResolver">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.Build.NuGetSdkResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Tasks.Core">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.Build.Tasks.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Utilities.Core">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.Build.Utilities.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.Cli.CommandLine">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.DotNet.Cli.CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.Cli.Sln.Internal">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.DotNet.Cli.Sln.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.Cli.Utils">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.DotNet.Cli.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.Configurer">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.DotNet.Configurer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.InternalAbstractions">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.DotNet.InternalAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.SdkResolver">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.DotNet.SdkResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.TemplateLocator">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.DotNet.TemplateLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.CommandLineUtils">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.Extensions.CommandLineUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.NET.HostModel">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.NET.HostModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.NET.Sdk.WorkloadManifestReader">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.NET.Sdk.WorkloadManifestReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TemplateEngine.Abstractions">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TemplateEngine.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TemplateEngine.Cli">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TemplateEngine.Cli.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TemplateEngine.Core">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TemplateEngine.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TemplateEngine.Core.Contracts">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TemplateEngine.Core.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TemplateEngine.Edge">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TemplateEngine.Edge.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TemplateEngine.Orchestrator.RunnableProjects">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TemplateEngine.Orchestrator.RunnableProjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TemplateEngine.Utils">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TemplateEngine.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TemplateSearch.Common">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TemplateSearch.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.Build">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TestPlatform.Build.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.CommunicationUtilities">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TestPlatform.CommunicationUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.CoreUtilities">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TestPlatform.CoreUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.CrossPlatEngine">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TestPlatform.CrossPlatEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.PlatformAbstractions">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TestPlatform.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.Utilities">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TestPlatform.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.VsTestConsole.TranslationLayer">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.TestPlatform.VsTestConsole.TranslationLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Coverage.CoreLib.Net">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.VisualStudio.Coverage.CoreLib.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.Client">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.VisualStudio.TestPlatform.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.Common">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.VisualStudio.TestPlatform.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.ObjectModel">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.SystemEvents">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Microsoft.Win32.SystemEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="MSBuild">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\MSBuild.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Build.Tasks">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Build.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Build.Tasks.Console">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Build.Tasks.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.CommandLine.XPlat">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.CommandLine.XPlat.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Commands">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Common">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Configuration">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Credentials">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Credentials.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.DependencyResolver.Core">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.DependencyResolver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Frameworks">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Frameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.LibraryModel">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.LibraryModel.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging.Core">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Packaging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.ProjectModel">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.ProjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Protocol">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Protocol.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Versioning">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\NuGet.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Extensions">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\System.Resources.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Extensions">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\System.Windows.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="vstest.console">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\vstest.console.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

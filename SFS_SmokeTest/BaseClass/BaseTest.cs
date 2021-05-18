@@ -16,14 +16,12 @@ namespace SFS_SmokeTest.BaseClass
     public class BaseTest
     {
         public IWebDriver driver;
-        ExtentReports extent = null;
+       
 
         [SetUp]
         public void Setup()
         {
-            extent = new ExtentReports();
-            var htmlReporter = new ExtentHtmlReporter(@"C:\Users\Skadam\Source\Repos\SFS_SmokeTestSuite\ExtentReports.html");
-            extent.AttachReporter(htmlReporter);
+           
             Console.Write("Setup");
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();

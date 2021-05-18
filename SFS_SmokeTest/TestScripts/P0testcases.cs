@@ -47,6 +47,8 @@ namespace SFS_SmokeTest.TestScripts
 
                 Assert.That(actualurl, Is.EqualTo(expectedurl));
                 Console.WriteLine("Pass" + actualurl);
+              
+                    
             }
             catch (Exception e)
             {
