@@ -1,10 +1,10 @@
 ﻿using NUnit.Framework;
-using SFS_SmokeTest.BaseClass;
+using SFS_ATX.BaseClass;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SFS_SmokeTest.TestScripts
+namespace SFS_ATX.TestScripts
 {
     [TestFixture]
     public class HomeLinks : BaseTest

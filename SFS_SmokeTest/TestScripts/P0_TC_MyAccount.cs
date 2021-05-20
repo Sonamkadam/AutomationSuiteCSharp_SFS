@@ -1,30 +1,27 @@
 ﻿using AventStack.ExtentReports;
-using AventStack.ExtentReports.Reporter;
 using NUnit.Framework;
 using SFS_ATX.BaseClass;
-using SFS_ATX.PagesObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace SFS_ATX.TestScripts
 {
-    [TestFixture]
-    public class P0_TC_Generic : BaseTest
-    {
-
+   public class P0_TC_MyAccount : BaseTest
+   {
         [Test]
-        public void KBSearch_HomePageTestcases()
+        public void MyAccount_HomePageTestcases()
         {
             try
             {
-                test = extent.CreateTest("TC_004 Execution").Info("Validation Started for KB Search URL");
+                test = extent.CreateTest("TC_009 Execution").Info("Validation Started for Manage My Account URL");
                 HomePage hp = new HomePage(driver);
                 String parentWindowHandle = driver.CurrentWindowHandle;
                 Console.WriteLine("CurrentWindow" + parentWindowHandle);
-                hp.KbSearchTextBox("ATX tax article");
-                test.Log(Status.Info, "Clicked on Serach icon");
+                hp.ManageLink();
+                test.Log(Status.Info, "Clicked on Manage Link");
                 List<String> listOfWindow = driver.WindowHandles.ToList();
                 String ChildWindowHandle = "";
                 foreach (var Handle in listOfWindow)
@@ -39,35 +36,7 @@ namespace SFS_ATX.TestScripts
                 string actualurl = driver.Url;
                 string page_title = driver.Title;
                 Console.WriteLine("Current_Page_Title" + page_title);
-                string expectedurl = "https://support-demo.cch.com/sfs";
-                Assert.That(actualurl, Does.Contain(expectedurl));
-                Console.WriteLine("Pass" + actualurl);
-                test.Log(Status.Pass, "Result is Pass");
-
-            }
-            catch (Exception e)
-            {
-                test.Log(Status.Fail, "Result is Fail");
-                Console.WriteLine("Fail" + e);
-                throw;
-
-            }
-
-        }
-
-        [Test]
-        public void PasswordCenter_HomePageTestcases()
-        {
-            try
-            {
-                test = extent.CreateTest("TC_005 Execution").Info("Validation Started for PasswordCenter URL");
-                HomePage hp = new HomePage(driver);
-                hp.PasswordCenterLink();
-                test.Log(Status.Info, "Clicked on PasswordCenter Link");
-                string actualurl = driver.Url;
-                string page_title = driver.Title;
-                Console.WriteLine("Current_Page_Title" + page_title);
-                string expectedurl = "https://wdc-qa-support.atxinc.com/home/passwordcenter";
+                string expectedurl = "https://qa-ngmyaccount.gsdwkglobal.com/myaccount/#/saml?idp=atx";
                 Assert.That(actualurl, Is.EqualTo(expectedurl));
                 Console.WriteLine("Pass" + actualurl);
                 test.Log(Status.Pass, "Result is Pass");
@@ -84,18 +53,18 @@ namespace SFS_ATX.TestScripts
         }
 
         [Test]
-        public void ATXProgramDownload_HomePageTestcases()
+        public void BankProductEnrollment_HomePageTestcases()
         {
             try
             {
-                test = extent.CreateTest("TC_022 Execution").Info("Validation Started for ATXProgramDownload URL");
+                test = extent.CreateTest("TC_010 Execution").Info("Validation Started for Bank Product enrollment URL");
                 HomePage hp = new HomePage(driver);
-                hp.ATXProgramDownloadsLink();
-                test.Log(Status.Info, "Clicked on ATXProgramDownload Link");
+                hp.BankLink();
+                test.Log(Status.Info, "Clicked on Bank Link");
                 string actualurl = driver.Url;
                 string page_title = driver.Title;
                 Console.WriteLine("Current_Page_Title" + page_title);
-                string expectedurl = "https://wdc-qa-support.atxinc.com/download/ATXProgramDownload";
+                string expectedurl = "https://wdc-qa-support.atxinc.com/myinformation/myinformation";
                 Assert.That(actualurl, Is.EqualTo(expectedurl));
                 Console.WriteLine("Pass" + actualurl);
                 test.Log(Status.Pass, "Result is Pass");
@@ -110,10 +79,5 @@ namespace SFS_ATX.TestScripts
             }
 
         }
-
-
     }
-
-    }
-
-
+}

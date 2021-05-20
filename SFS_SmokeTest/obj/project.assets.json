@@ -10555,9 +10555,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Automation Framework\\GitHub\\AutomationSuiteCSharp_SFS\\SFS_SmokeTest\\SFS_SmokeTest.csproj",
-      "projectName": "SFS_SmokeTest",
-      "projectPath": "C:\\Automation Framework\\GitHub\\AutomationSuiteCSharp_SFS\\SFS_SmokeTest\\SFS_SmokeTest.csproj",
+      "projectUniqueName": "C:\\Automation Framework\\GitHub\\AutomationSuiteCSharp_SFS\\SFS_SmokeTest\\SFS_ATX_AutomationTestSuite.csproj",
+      "projectName": "SFS_ATX_AutomationTestSuite",
+      "projectPath": "C:\\Automation Framework\\GitHub\\AutomationSuiteCSharp_SFS\\SFS_SmokeTest\\SFS_ATX_AutomationTestSuite.csproj",
       "packagesPath": "C:\\Users\\Skadam\\.nuget\\packages\\",
       "outputPath": "C:\\Automation Framework\\GitHub\\AutomationSuiteCSharp_SFS\\SFS_SmokeTest\\obj\\",
       "projectStyle": "PackageReference",

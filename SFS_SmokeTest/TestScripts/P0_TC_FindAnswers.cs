@@ -1,13 +1,13 @@
 ﻿using AventStack.ExtentReports;
 using NUnit.Framework;
-using SFS_SmokeTest.BaseClass;
+using SFS_ATX.BaseClass;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SFS_SmokeTest.TestScripts
+namespace SFS_ATX.TestScripts
 {
     [TestFixture]
     public class P0_TC_FindAnswers : BaseTest

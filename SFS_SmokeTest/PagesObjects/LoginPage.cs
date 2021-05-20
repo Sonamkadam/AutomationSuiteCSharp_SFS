@@ -3,10 +3,10 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support;
 using SeleniumExtras.PageObjects;
-using SFS_SmokeTest.PagesObjects;
+using SFS_ATX.PagesObjects;
 using System.Threading;
 
-namespace SFS_SmokeTest
+namespace SFS_ATX
 {
     public class LoginPage
     {

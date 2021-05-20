@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace SFS_SmokeTest
+namespace SFS_ATX
 {
     public class HomePage
     {
@@ -44,10 +44,27 @@ namespace SFS_SmokeTest
         [FindsBy(How = How.LinkText, Using = "Ask")]
         public IWebElement Ask { get; set; }
 
+        [FindsBy(How = How.LinkText, Using = "Manage")]
+        public IWebElement Manage { get; set; }
+
+        [FindsBy(How = How.LinkText, Using = "Bank")]
+        public IWebElement Bank{ get; set; }
+
+        [FindsBy(How = How.LinkText, Using = "Chat")]
+        public IWebElement Chat { get; set; }
+
+        [FindsBy(How = How.LinkText, Using = "Open")]
+        public IWebElement Open { get; set; }
+
+        [FindsBy(How = How.LinkText, Using = "Click")]
+        public IWebElement Click { get; set; }
+
+        [FindsBy(How = How.XPath, Using = "//img[@title='Download Tax Preparation Products, Tax Program Updates, PCR Payroll Products, PCR Program Updates']")]
+        public IWebElement ATXProgramDownload { get; set; }
         /// <summary>
         /// Methods for functioning on the elements.
         /// </summary>
-        
+
         public void KbSearchTextBox(String value)
         {
             KbSearch.SendKeys(value);
@@ -74,6 +91,40 @@ namespace SFS_SmokeTest
         {
             Ask.Click();
         }
+
+        public void ManageLink()
+        {
+            Manage.Click();
+
+        }
+
+        public void BankLink()
+        {
+            Bank.Click();
+        }
+
+        public void ChatLink()
+        {
+            Chat.Click();
+        }
+
+        public void OpenLink()
+        {
+            Open.Click();
+        }
+
+        public void ClickLink()
+        {
+            Click.Click();
+        }
+
+        public void ATXProgramDownloadsLink()
+        {
+            ATXProgramDownload.Click();
+        }
+
+
+
 
     }
 }

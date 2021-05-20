@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SFS_SmokeTest.PagesObjects
+namespace SFS_ATX.PagesObjects
 {
    public class HomeIndexPage
     {

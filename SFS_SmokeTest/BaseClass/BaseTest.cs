@@ -3,14 +3,14 @@ using AventStack.ExtentReports.Reporter;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using SFS_SmokeTest.PagesObjects;
+using SFS_ATX.PagesObjects;
 using System;
 using System.Collections.Specialized;
 using System.Configuration;
 using System.Text;
 using System.Threading;
 
-namespace SFS_SmokeTest.BaseClass
+namespace SFS_ATX.BaseClass
 {
     [TestFixture]
     public class BaseTest
@@ -25,7 +25,7 @@ namespace SFS_SmokeTest.BaseClass
         {
 
             extent = new ExtentReports();
-            var htmlReporter = new ExtentHtmlReporter(@"C:\Automation Framework\GitHub\AutomationSuiteCSharp_SFS\SFS_SmokeTest\Extent Reports\");
+            var htmlReporter = new ExtentHtmlReporter(@"C:\Automation Framework\GitHub\AutomationSuiteCSharp_SFS\SFS_ATX\Extent Reports\");
             extent.AttachReporter(htmlReporter);
         }
 
@@ -67,7 +67,6 @@ namespace SFS_SmokeTest.BaseClass
         [OneTimeTearDown]
         public void ExtentClose()
         {
-
             extent.Flush();
         }
 

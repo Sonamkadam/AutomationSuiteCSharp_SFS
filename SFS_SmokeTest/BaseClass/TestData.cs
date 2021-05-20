@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace SFS_SmokeTest.BaseClass
+namespace SFS_ATX.BaseClass
 {
  
     public  class TestData

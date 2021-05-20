@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "SFS_SmokeTest/1.0.0": {
+      "SFS_ATX_AutomationTestSuite/1.0.0": {
         "dependencies": {
           "DotNetSeleniumExtras.PageObjects": "3.11.0",
           "DotNetSeleniumExtras.PageObjects.Core": "3.12.0",
@@ -75,7 +75,7 @@
           "vstest.console": "15.0.0.0"
         },
         "runtime": {
-          "SFS_SmokeTest.dll": {}
+          "SFS_ATX_AutomationTestSuite.dll": {}
         }
       },
       "DnsClient/1.2.0": {
@@ -4215,7 +4215,7 @@
     }
   },
   "libraries": {
-    "SFS_SmokeTest/1.0.0": {
+    "SFS_ATX_AutomationTestSuite/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
