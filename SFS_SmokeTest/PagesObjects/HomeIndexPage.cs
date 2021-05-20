@@ -22,10 +22,10 @@ namespace SFS_SmokeTest.PagesObjects
         public IWebElement HomeMenu { get; set; }
 
 
-        public HomePage HomeMenulink()
+        public void HomeMenulink()
         {
             HomeMenu.Click();
-            return new HomePage(Driver);
+            //return new HomePage(Driver);
         }
     }
 }

@@ -48,12 +48,9 @@ namespace SFS_SmokeTest
         /// Methods for functioning on the elements.
         /// </summary>
         
-
-        
-
-        public void KbSearchTextBox()
+        public void KbSearchTextBox(String value)
         {
-            KbSearch.SendKeys("ATX");
+            KbSearch.SendKeys(value);
             Thread.Sleep(5000);
             ClicktKbSearch.Click();
 

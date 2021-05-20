@@ -38,7 +38,7 @@ namespace SFS_SmokeTest
         [FindsBy(How = How.LinkText, Using = "I understand")]
         public IWebElement Understand { get; set; }
         //Methods
-        public HomeIndexPage ClientLoginPage(string cntId,string Uname, string Pword)
+        public void ClientLoginPage(string cntId,string Uname, string Pword)
         {
             Loginlink.Click();
             ClientId.SendKeys(cntId);
@@ -47,7 +47,7 @@ namespace SFS_SmokeTest
             Understand.Click();
             Thread.Sleep(4000);
             LoginButton.Click();
-            return new HomeIndexPage(Driver);
+           // return new HomeIndexPage(Driver);
 
         }
 

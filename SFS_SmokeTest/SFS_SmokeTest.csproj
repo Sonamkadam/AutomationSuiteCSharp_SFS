@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
 
@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Reports\" />
+    <Folder Include="Extent Reports\" />
     <Folder Include="TestData\" />
     <Folder Include="Screenshots\" />
   </ItemGroup>
@@ -241,6 +241,12 @@
     <Reference Include="vstest.console">
       <HintPath>..\..\..\..\Program Files\dotnet\sdk\5.0.202\vstest.console.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configurations\App1.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
