@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using AventStack.ExtentReports.Reporter;
 using SFS_ATX.BaseClass;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 namespace SFS_ATX.TestScripts
 {
     [TestFixture]
-    public class HomeLinks : BaseTest
+    public class P0_TC_HomeLinks : BaseTest
     {
         
 

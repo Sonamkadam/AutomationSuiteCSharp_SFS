@@ -25,7 +25,7 @@ namespace SFS_ATX.BaseClass
         {
 
             extent = new ExtentReports();
-            var htmlReporter = new ExtentHtmlReporter(@"C:\Automation Framework\GitHub\AutomationSuiteCSharp_SFS\SFS_ATX\Extent Reports\");
+            var htmlReporter = new ExtentHtmlReporter(@"C:\Automation Framework\GitHub\AutomationSuiteCSharp_SFS\SFS_SmokeTest\Extent Reports\");
             extent.AttachReporter(htmlReporter);
         }
 

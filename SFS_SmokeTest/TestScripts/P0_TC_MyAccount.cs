@@ -37,7 +37,7 @@ namespace SFS_ATX.TestScripts
                 string page_title = driver.Title;
                 Console.WriteLine("Current_Page_Title" + page_title);
                 string expectedurl = "https://qa-ngmyaccount.gsdwkglobal.com/myaccount/#/saml?idp=atx";
-                Assert.That(actualurl, Is.EqualTo(expectedurl));
+                Assert.That(actualurl, Does.Contain(expectedurl));
                 Console.WriteLine("Pass" + actualurl);
                 test.Log(Status.Pass, "Result is Pass");
 

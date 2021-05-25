@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bmF5aNSwPGvJ+GkymGZLMGkM9HjcDjsnvNMxzv9+VBUmuyB7Ha/Nc87LW0KQLxzp6Kv71g9uOnZYZ9B7WD1gzA==",
+  "dgSpecHash": "NDPAQyVwj9bsQ3t65cQoQCe1e7LbFC0o6zGSMdodGV7BmGNwsLIxEau3FWO8x1j0Rbv7CKFMOGf9rr5+Xzdrsg==",
   "success": true,
   "projectFilePath": "C:\\Automation Framework\\GitHub\\AutomationSuiteCSharp_SFS\\SFS_SmokeTest\\SFS_ATX_AutomationTestSuite.csproj",
   "expectedPackageFiles": [
@@ -84,6 +84,7 @@
     "C:\\Users\\Skadam\\.nuget\\packages\\mongodb.driver\\2.10.0\\mongodb.driver.2.10.0.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\mongodb.driver.core\\2.10.0\\mongodb.driver.core.2.10.0.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\mongodb.libmongocrypt\\1.0.0\\mongodb.libmongocrypt.1.0.0.nupkg.sha512",
+    "C:\\Users\\Skadam\\.nuget\\packages\\mstest.testframework\\2.2.3\\mstest.testframework.2.2.3.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
@@ -130,9 +131,9 @@
     "C:\\Users\\Skadam\\.nuget\\packages\\system.diagnostics.fileversioninfo\\4.3.0\\system.diagnostics.fileversioninfo.4.3.0.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\system.diagnostics.process\\4.3.0\\system.diagnostics.process.4.3.0.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\system.diagnostics.stacktrace\\4.3.0\\system.diagnostics.stacktrace.4.3.0.nupkg.sha512",
-    "C:\\Users\\Skadam\\.nuget\\packages\\system.diagnostics.textwritertracelistener\\4.0.0\\system.diagnostics.textwritertracelistener.4.0.0.nupkg.sha512",
+    "C:\\Users\\Skadam\\.nuget\\packages\\system.diagnostics.textwritertracelistener\\4.3.0\\system.diagnostics.textwritertracelistener.4.3.0.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
-    "C:\\Users\\Skadam\\.nuget\\packages\\system.diagnostics.tracesource\\4.0.0\\system.diagnostics.tracesource.4.0.0.nupkg.sha512",
+    "C:\\Users\\Skadam\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
     "C:\\Users\\Skadam\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",
